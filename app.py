@@ -13,3 +13,4 @@ def contact():
         print('We received POST')
         print(request.form)
         return redirect("/")
+        

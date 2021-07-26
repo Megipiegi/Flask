@@ -1,14 +1,8 @@
-<!DOCTYPE html>
-<html lang="pl">
-    <head>
-        <meta charset="utf-8">
-        <title>Moja pierwsza strona www</title>
-        <link rel="stylesheet" href="style.css">   
-    </head>
-    <body>
-        <h1>Witam na mojej stronie</h1>
-        <h2>O mnie</h2>
-        <img src="{{url_for('static',filename='logo.jpg')}}">
+{% extends "parent.html" %}
+
+{% block content %}
+ 
+        <h2>Znak zodiaku: Lew :-)</h2>
         <p><strong>Imię:</strong>Magdalena</p>
         <p><strong>Nazwisko:</strong>Pawłowska</p>
         <form action="" method="POST">
@@ -16,5 +10,6 @@
             <input name="firstname"/>
             <input type="submit"/>
         </form>
+{% endblock %}
     </body>
 </html>

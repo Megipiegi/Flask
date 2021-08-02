@@ -1,6 +1,5 @@
 from flask import Flask, request, render_template
 app = Flask (__name__)
-
 @app.route ('/mypage/me')
 def me():
     return render_template ('me.html')
